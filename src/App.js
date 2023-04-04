@@ -86,7 +86,9 @@ function App() {
     }
   }, [guesses])
 
-  useEffect(() => { },[])
+  useEffect(() => {
+    const uniqueLetters = [...new Set(letters)]
+  },[guessedLetters])
 
 
   const retry = () => {
